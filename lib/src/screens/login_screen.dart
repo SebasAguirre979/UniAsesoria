@@ -4,6 +4,7 @@ import 'package:uniasesoria/src/widgets/customized_textfield.dart';
 import '../widgets/customized_button.dart';
 import 'forgot_password.dart';
 import 'home_screen.dart';
+import 'student_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -95,6 +96,16 @@ class _LoginScreenState extends State<LoginScreen> {
                                       builder: (context) => HomeScreen(
                                           _usernameController.text)));
                             }
+
+                            if (_usernameController.text == 'student' &&
+                                _passwordController.text == 'student') {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => StudentScreen(
+                                          _usernameController.text)));
+                            }
+
                             if (_usernameController.text == '' &&
                                 _passwordController.text == '') {
                               showDialog<String>(
