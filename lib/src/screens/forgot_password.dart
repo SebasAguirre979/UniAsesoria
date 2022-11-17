@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../widgets/customized_button.dart';
 import '../widgets/customized_textfield.dart';
-import 'register_screen.dart';
+// import 'register_screen.dart';
 
 class ForgotPassword extends StatefulWidget {
   const ForgotPassword({super.key});
